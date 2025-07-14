@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: grey;
+    position: relative;
+    box-shadow: 0 25px 60px rgb(190, 176, 176);
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.red{
+    background-color: red;
+    border-top-left-radius: 100%;
+}
+
+.yellow{
+    background-color: yellow;
+    border-top-right-radius: 100%;
+}
+
+.green{
+    background-color: green;
+    border-bottom-left-radius: 100%;
+}
+
+.blue{
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    border: 8px solid #222;
+    box-shadow: inset 0 0 80px #333;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 160px;
+    height: 160px;
+    background: #555;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.msg{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.msg-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.pressed {
+  opacity: 0.5;
+  transition: 0.1s;
+}
+
+.flash {
+  background-color: white;
+  transition: 0.1s;
+}
+
+.game-over {
+  background-color: red;
+}
